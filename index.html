@@ -94,9 +94,11 @@
     margin: 0 auto;
   }
 
+  .hero-text { text-align: center; align-items: center; }
   .hero-text h1 {
+    text-align: center;
     font-family: 'Fraunces', serif;
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(1.5rem, 3vw, 2.75rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -2px;
@@ -117,6 +119,65 @@
     opacity: 0.8;
     max-width: 420px;
     margin-bottom: 2rem;
+  }
+
+  .hero-top-taglines {
+    margin-bottom: 1.25rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-name {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.3rem;
+  }
+
+  .hero-occasion {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #FFB6D4;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero-location {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #FFB6D4;
+    opacity: 0.85;
+    margin-bottom: 0;
+  }
+
+  .hero-taglines {
+    margin-bottom: 1.5rem;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .hero-taglines span:first-child {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-taglines span:nth-child(3) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFB6D4;
+  }
+
+  .hero-taglines span:nth-child(5) {
+    font-size: 0.95rem;
+    color: #FFB6D4;
+    opacity: 0.85;
   }
 
   .hero-btns {
@@ -587,7 +648,33 @@
       text-align: center;
       padding-top: 6rem;
     }
-    .hero-btns { justify-content: center; }
+    .hero-taglines {
+    margin-bottom: 1.5rem;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .hero-taglines span:first-child {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-taglines span:nth-child(3) {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFB6D4;
+  }
+
+  .hero-taglines span:nth-child(5) {
+    font-size: 0.95rem;
+    color: #FFB6D4;
+    opacity: 0.85;
+  }
+
+  .hero-btns { justify-content: center; }
     .hero-visual { order: -1; }
     .cookie-circle { width: 260px; height: 260px; font-size: 6rem; }
     .badge-1, .badge-2 { width: 80px; height: 80px; font-size: 0.65rem; }
@@ -612,12 +699,17 @@
 <!-- HERO -->
 <section>
   <div class="hero">
-    <div class="hero-text">
+    <div class="hero-text" style="text-align:center;">
+      <div class="hero-top-taglines">
+          <p class="hero-name">Custom Cookies by Alyssa</p>
+          <p class="hero-occasion">Special Occasion and Custom Cookies</p>
+          <p class="hero-location">Lake Elsinore, CA and Surrounding Areas</p>
+        </div>
       <h1>Baked with<br><span class="accent-yellow">love</span>,<br>delivered with<br><span class="accent-pink">joy.</span></h1>
-      <p>Custom hand-iced sugar cookies for every occasion — birthdays, graduations, holidays, sports, and more. Each one is made to order, just for you.</p>
+      
       <div class="hero-btns">
-        <a href="#order" class="btn-primary">Order Today</a>
-        <a href="#menu" class="btn-secondary">See the Menu</a>
+        <a href="#order" class="btn-primary">Order Cookies</a>
+        <a href="#faq" class="btn-secondary">FAQ</a>
       </div>
     </div>
     <div class="hero-visual">
